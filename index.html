@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sally Student Resume</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
         <div id="app"></div>
@@ -13,10 +14,10 @@
         <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"> </script>
         <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
         <script type="text/babel">
-              function App() {
+              function App(props) {
                     return <div>  
                             <header>
-                                <h1>Sally Student</h1>
+                                <h1>{props.studentName}</h1>
                                 <h2>Web Designer</h2>
                                 <img src="https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg" height="200px" /><br />
                                 <address>
@@ -52,7 +53,7 @@
                 }
                 
                 ReactDOM.render(
-                    <App />,
+                    <App studentName='Sally Student'/>,
                     document.querySelector('#app')
                 );
         </script>
