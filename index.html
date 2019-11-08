@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sally Student Resume</title>
+</head>
+<body>
+    <main id="app">
+
+    </main>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script>
+        function App(){
+            return (
+             <div>  
+                <header>
+                    <h1>Sally Student</h1>
+                    <h2>Web Designer</h2>
+                    <img src="https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg" height="200px" /><br />
+                    <address>
+                        123 Sally Street<br />
+                        Oakview, CA 93746
+                    </address>
+                        <a href="mailto:sallystudent@web.com">sallystudent@web.com</a>
+                        <p>985-876-8732</p>
+                </header>
+                    
+                    
+                    <section>
+                        <h3>Experience</h3>
+                        <article>
+                        <h4>Amazon // Web Designer</h4>
+                        <p>August 2018 - Present</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </article>
+                        <article>
+                        <h4>Apple // Web Designer</h4>
+                        <p>August 2018 - Present</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </article>
+
+                    </section>
+                    
+                    <section>
+                        <h3>Education</h3>
+                        <h4>Milwaukee School of Engineering</h4>
+                        <p>Bachelor of Fine Arts, 2014-2018</p>
+                    </section>
+            </div>
+            );
+        }
+        ReactDOM.render(<App />, document.querySelector('#app'));
+    </script>
+</body>
+</html>
